@@ -1,0 +1,229 @@
+.CardStyle {
+  border: 1px solid #96BEE7;
+  background-color: #616161D1;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+
+}
+
+.FirstWidgets {
+  background-color: #363C43;
+  box-shadow: 3px 3px 4px #000000;
+  border-radius: 20px;
+  height: 18rem;
+  /* Fixed height */
+  overflow-y: scroll;
+  /* Allow scrolling within */
+
+  padding: 10px;
+  /* Add padding to avoid content touching the borders */
+  box-sizing: border-box;
+  /* Ensure padding doesn't overflow the element */
+  position: relative;
+}
+
+.secondWidgets {
+  background-color: #363C43;
+  box-shadow: 3px 3px 4px #000000;
+  border-radius: 20px;
+  height: 18rem;
+  /* Fixed height */
+
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+/* Style the scrollbar track (background of the scrollbar) */
+.FirstWidgets::-webkit-scrollbar {
+
+  display: none;
+
+}
+.NavBar {
+  background-color: black;
+  border-radius: 20px;
+
+}
+
+.navbar-brand {
+  color: #A3ADB2;
+  z-index: 1;
+  padding: 5px;
+  font-size: medium;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+
+.NavBar {
+  position: absolute;
+  height: 54px;
+  width: 85%;
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0;
+}
+
+.NavBar .navbar-brand {
+  cursor: pointer;
+}
+
+.NavBar .navbar-brand.active {
+  font-weight: bold;
+}
+
+.tab-indicator {
+  position: relative;
+  top: 22%;
+  width: 30%;
+  height: 38px;
+  background-color: rgba(36, 36, 37, 0.895);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 17px 30px 55px #000000;
+}
+
+.Intro {
+  color: #969699;
+  font-size: large;
+
+}
+
+.HrDiv {
+  height: 5px;
+  width: 80%;
+  margin-top: 4%;
+  margin-left: 10%;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px #000000;
+  background-image: linear-gradient(#363C43, #363C43);
+}
+
+.GalleryBtn {
+  width: 140px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #171717;
+  font-weight: bold;
+
+}
+
+.AddImgBtn {
+  width: 140px;
+  height: 45px;
+  border: none;
+  outline: none;
+
+  color: #ffffff;
+  background-color: #171717;
+  font-weight: bold;
+}
+
+
+.add-image-btn {
+  display: inline-block;
+  padding: 10px;
+  /* background-color: #4A4A4A; */
+  background: linear-gradient(145deg, #4a4a4a, #333333);
+  /* Gradient background */
+  color: white;
+  /* Text color */
+  font-size: 1rem;
+  /* Font size for the text */
+  border-radius: 40px;
+  /* Fully rounded edges */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  /* Subtle shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Smooth animation for hover */
+  cursor: pointer;
+  /* Change cursor to pointer */
+  font-weight: bold;
+  margin-right: 1rem;
+  letter-spacing: 1px;
+  /* Spacing between letters */
+  text-align: center;
+  user-select: none;
+  /* Disable text selection */
+}
+
+.add-image-btn:hover {
+  transform: translateY(-2px);
+  /* Slight movement upwards */
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.6);
+  /* Darker shadow when hovering */
+}
+
+.add-image-btn span {
+  vertical-align: middle;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  /* Font style */
+}
+
+.Arrow2 {
+  margin-right: 1rem;
+  background: linear-gradient(145deg, #303439, #161718);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 45px;
+  height: 45px;
+  border-radius: 40px;
+  box-shadow: 6px 6px 14px #4c5761;
+}
+
+.Arrow1 {
+  background: linear-gradient(145deg, #303439, #161718);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 6px 6px 14px #4c5761;
+  width: 45px;
+  height: 45px;
+  border-radius: 40px;
+}
+
+.Arrow1:hover,
+.Arrow2:hover {
+  transform: translateY(-1px);
+  /* Slight movement upwards */
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.6);
+  /* Darker shadow when hovering */
+}
+
+/* Image Grid and Hover Effects */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-item {
+  width: 130px;
+  height: 130px;
+  margin-top: 2rem;
+  position: relative;
+
+}
+
+.uploaded-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  opacity: 0.3;
+}
+
+/* Hover Animation */
+.image-item:hover .uploaded-image {
+  transform: scale(1.2) rotate(-3deg);
+  opacity: 1;
+}
+
+/* Button for adding image */
